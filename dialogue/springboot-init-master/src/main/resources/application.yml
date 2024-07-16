@@ -26,7 +26,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/dialogue
     username: root
-    password: 123456
+    password: TaiLi@123
   data:
     mongodb:
       uri: mongodb://localhost:27017/mongo
