@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mxf.springbootinit.mapper.FileMapper">
+    <resultMap id="BaseResultMap" type="com.mxf.springbootinit.model.entity.File">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="filename" column="fileName" jdbcType="VARCHAR"/>
+            <result property="userid" column="userId" jdbcType="BIGINT"/>
+            <result property="createtime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="filesize" column="fileSize" jdbcType="VARCHAR"/>
+            <result property="state" column="state" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,fileName,userId,
+        createTime,fileSize,state
+    </sql>
+</mapper>
